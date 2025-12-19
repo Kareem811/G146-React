@@ -1,13 +1,13 @@
 import React from "react";
+import homeStyles from "./styles/home.module.css";
+// import cat from "../images/cat.jpg";
 const Home = () => {
-  const x = "orwej";
-  const y = "content";
-  const z = true;
-  const elementStyles = {
-    color: "red",
-    backgroundColor: "black",
-    padding: z ? "100px" : "20px",
-  };
-  return <h1 style={x === "container" ? elementStyles : {}}>Hello</h1>;
+  return (
+    <>
+      <h1 className={homeStyles.text}>Home Component</h1>
+      {/* <img src={"../src/images/cat.jpg"} alt="" /> */}
+      <img src={"/images/cat.jpg"} alt="" />
+    </>
+  );
 };
 export default Home;
