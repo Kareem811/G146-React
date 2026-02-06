@@ -6,6 +6,8 @@ import "./Components/styles/style.css";
 import About from "./Components/About";
 import Counter from "./Components/Counter";
 import "./App.css";
+import Test from "./Components/Session 4/Test";
+import Form from "./Components/Session 4/Form";
 const App = () => {
   return (
     <div className="container">
@@ -17,7 +19,9 @@ const App = () => {
         <Box x={"navy"} y={"This is Box 2"} /> 
         <Box x={"black"} y={"This is Box 3"} /> 
       </section> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Test />
+      {/* <Form /> */}
     </div>
   );
 };

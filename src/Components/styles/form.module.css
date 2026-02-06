@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.container form {
+  width: 800px;
+  max-width: 600px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.containfr form div {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container form div input,
+.container form div textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.container form div textarea {
+  height: 70px;
+}
+
+.container form button {
+  padding: 10px 50px;
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
