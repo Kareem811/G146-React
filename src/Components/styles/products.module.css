@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e7e7e7;
+  padding: 30px 50px;
+}
+.container .content {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+}
+.container .content .data {
+  width: 100%;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.container .content .data .product {
+  width: 100%;
+  min-height: 320px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container .content .data .product img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.container .content .data .product .productData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+}
+.container .content .data .product .productData h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.container .content .data .product .productData button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 50px;
+  background-color: darkred;
+  color: #fff;
+  font-weight: 500;
+  border-radius: px;
+}
+@media screen and (max-width: 780px) {
+  .container .content .data {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+}
+@media screen and (max-width: 630px) {
+  .container .content .data {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+}
