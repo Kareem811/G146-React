@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.container .layer {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .layer .data {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+.container .layer .data h1 {
+  font-size: 3.5rem;
+}
+.container .layer .data p {
+  max-width: 700px;
+}
+
+.container .layer .data button {
+  padding: 10px 45px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: tomato;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
